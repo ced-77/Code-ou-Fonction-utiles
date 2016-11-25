@@ -148,7 +148,7 @@
                 console.log('Nous somme : '+nom_jour);
                 console.log('Nous somme en : '+nom_mois);
                 if (pays == 'fr' ) {console.log('La date en français est : '+nom_jour+' '+numero_jour+' '+nom_mois+' '+annee+' et il est : '+heure_maintenant);}
-                if (pays == 'ja') {console.log( '日本語で　今は'+annee+' '+nom_mois+' '+numero_jour+' '+nom_jour+' 時です：'+heure_maintenant );}
+                if (pays == 'ja') {console.log( '日本語で　今は '+annee+'年 '+nom_mois+' '+numero_jour+' '+nom_jour+' 時です：'+heure_maintenant );}
                 if (pays == 'us') {console.log('English USA : '+nom_jour+' '+nom_mois+' '+numero_jour+' '+annee+' the time is : '+heure_maintenant); } 
                 
                       
@@ -162,4 +162,4 @@
              
              
              // execution de la fonction
-             maintenant_imawa('us');     
+             maintenant_imawa('ja');     
