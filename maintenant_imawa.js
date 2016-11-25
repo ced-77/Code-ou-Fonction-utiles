@@ -42,7 +42,7 @@
                          // mois en chiffre
                          // on rajoute +1 car le tableau commence à 0 ezt non 1 pour janvier 
                             var mois_chiffre = date_maintenant.getMonth()+1;
-                            if (mois_chiffre < 10 ) { mois_chiffre = '0'+mois-chiffre}
+                            if (mois_chiffre < 10 ) { mois_chiffre = '0'+mois_chiffre}
                             
                          // numéro du jour
                             var numero_jour = date_maintenant.getDate();
@@ -162,4 +162,4 @@
              
              
              // execution de la fonction
-             maintenant_imawa('ja');     
+             maintenant_imawa('jp');     
