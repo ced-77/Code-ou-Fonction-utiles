@@ -1,20 +1,21 @@
-﻿// JavaScript Document
-
-
-/**
+﻿/**
  *            maintenant_imawa()
  *   Fonction javaScript qui permet de retourner la date et l'heure
- *   sous forme de tableau. Elle retourne le tableau avec 
+ *   sous forme de tableau objet. Elle retourne le tableau avec 
  *   les valeurs jour et mois en fonction du pays entrée en paramettre
+ *   Ainsi que la date complete sous format du pays
  *   
- *   pays : us = USA, fr = france, jp = 日本, cn = 中国,   
+ *   pays : us = USA, fr = france*(par defaut), jp = 日本, cn = 中国,   
  *   
  *   @param string, var pays (code http du pay )
  *   
- *   @return array, tableau 
+ *   @return array, tableau objet 
  */
  
              function maintenant_imawa ( pays = 'fr' ) {
+
+                       //mise en minuscule de la variable pays
+                            pays = pays.toLowerCase();
              
                       // initialisation de l'objet date
                          var date_maintenant = new Date();
@@ -33,7 +34,7 @@
                             if (secondes < 10 ) { secondes = '0' +secondes }
                             
                          // creaton du format heure 
-                            var heure_maintenant = heure+':'+minutes+':'+secondes;
+                            var heure_standar = heure+':'+minutes+':'+secondes;
                             
                       // recuperation de la date
                          // annee - year - 年
@@ -77,6 +78,7 @@
                                      else if ( parseInt(mois_chiffre) == 11 ) { nom_mois = 'Novrembre'}
                                      else if ( parseInt(mois_chiffre) == 12 ) { nom_mois = 'Decembre'}
                                      else { nom_mois = false; }
+                                 // 
                                      
                          // fin de la condition france
                          } else if (pays == 'us' ) {
@@ -136,30 +138,36 @@
                                      else if ( parseInt(mois_chiffre) == 12 ) { nom_mois = '十二月'}
                                      else { nom_mois = false; }
                          
-                         // .. on orawri - 何か　の　終わり
-                         }
-                         
-                         
-             // controle affichage
-                console.log('il est  : '+heure_maintenant);
-                console.log('annees : '+annee);
-                console.log('mois en chiffre : '+mois_chiffre);
-                console.log('nous somme le : '+numero_jour);
-                console.log('Nous somme : '+nom_jour);
-                console.log('Nous somme en : '+nom_mois);
-                if (pays == 'fr' ) {console.log('La date en français est : '+nom_jour+' '+numero_jour+' '+nom_mois+' '+annee+' et il est : '+heure_maintenant);}
-                if (pays == 'jp' || pays == 'cn' ) {console.log(+annee+'年 '+nom_mois+' '+numero_jour+' '+nom_jour+' 時 ：'+heure_maintenant );}
-                if (pays == 'us') {console.log('English USA : '+nom_jour+' '+nom_mois+' '+numero_jour+' '+annee+' the time is : '+heure_maintenant); } 
+                         // .. no orawri - 何か　の　終わり
+                         } 
+
+            // initialisation des format pour la date et l'heure
+                if (pays == 'fr' )                  {format_date = nom_jour+' '+numero_jour+' '+nom_mois+' '+annee; format_heure = heure+' h '+minutes+' m ';}
+                if (pays == 'jp' || pays == 'cn' )  {format_date = annee+'年 '+nom_mois+' '+numero_jour+'日 '+nom_jour; format_heure = heure+'時 '+minutes+'分 '; }
+                if (pays == 'us')                   {format_date = nom_jour+' '+nom_mois+' '+numero_jour+' '+annee; format_heure = heure+' h '+minutes+' m '; } 
                 
-                      
-                      
-                      
-             
-             
-             
+            // creation de l'objet qui sera renvoye
+                 tableau_date_heure = { 
+                            heure_standar : heure_standar,
+                            annee : annee,
+                            mois_chiffre : mois_chiffre,
+                            mois_nom : nom_mois,
+                            jour_chiffre : numero_jour,
+                            jour_nom : nom_jour,
+                            date_format : format_date,
+                            heure_format : format_heure
+                     };
+
+            // retourne le tableau objet
+                return tableau_date_heure;
+
              // fin de la fonction maintenant_imawa()
              }
              
              
              // execution de la fonction
-             maintenant_imawa('jp');     
+             // var date_heure_du_jour = maintenant_imawa('jp'); 
+             // console.log(date_heure_du_jour);  
+
+             // var laDateDuJour = date_heure_du_jour['date_format'];
+             // ('Aujourd\'hui nous somme '+laDateDuJour);  
