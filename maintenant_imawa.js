@@ -7,7 +7,7 @@
  *   sous forme de tableau. Elle retourne le tableau avec 
  *   les valeurs jour et mois en fonction du pays entrée en paramettre
  *   
- *   pays : us = anglais, fr = france, ja = japon   
+ *   pays : us = anglais, fr = france, jp = japon   
  *   
  *   @param string, var pays (code http du pay )
  *   
@@ -108,7 +108,7 @@
                          
                          
                          // end of condition us
-                         } else if (pays == 'ja') {
+                         } else if (pays == 'jp') {
                                    // condition pour le jour
                                    // 日の書き方
                                      if ( parseInt(chiffre_nom_jour) === 0 ) { nom_jour = '日曜日'}
@@ -148,7 +148,7 @@
                 console.log('Nous somme : '+nom_jour);
                 console.log('Nous somme en : '+nom_mois);
                 if (pays == 'fr' ) {console.log('La date en français est : '+nom_jour+' '+numero_jour+' '+nom_mois+' '+annee+' et il est : '+heure_maintenant);}
-                if (pays == 'ja') {console.log( '日本語で　今は '+annee+'年 '+nom_mois+' '+numero_jour+' '+nom_jour+' 時です：'+heure_maintenant );}
+                if (pays == 'jp') {console.log( '日本語で　今は '+annee+'年 '+nom_mois+' '+numero_jour+' '+nom_jour+' 時です：'+heure_maintenant );}
                 if (pays == 'us') {console.log('English USA : '+nom_jour+' '+nom_mois+' '+numero_jour+' '+annee+' the time is : '+heure_maintenant); } 
                 
                       
