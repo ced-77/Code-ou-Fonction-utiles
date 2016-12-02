@@ -17,7 +17,7 @@ Répertoir des bout de code ou des fonctions qui peuvent être utiles au dévelo
 
  
  
-## Fonction maintenant_imaha()
+## Fonction maintenant_imawa()
 
       * Fonction javaScript qui permet de retourner la date et l'heure
         sous forme de tableau objet. Elle retourne le tableau avec 
