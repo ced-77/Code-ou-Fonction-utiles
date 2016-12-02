@@ -1,4 +1,4 @@
-﻿/**
+/**
  *            maintenant_imawa()
  *   Fonction javaScript qui permet de retourner la date et l'heure
  *   sous forme de tableau objet. Elle retourne le tableau avec 
@@ -166,8 +166,8 @@
              
              
              // execution de la fonction
-             // var date_heure_du_jour = maintenant_imawa('jp'); 
-             // console.log(date_heure_du_jour);  
+             var date_heure_du_jour = maintenant_imawa(); 
+              console.log(date_heure_du_jour);  
 
-             // var laDateDuJour = date_heure_du_jour['date_format'];
-             // ('Aujourd\'hui nous somme '+laDateDuJour);  
+             var laDateDuJour = date_heure_du_jour['date_format'];
+             console.log('Aujourd\'hui nous somme '+laDateDuJour);  
