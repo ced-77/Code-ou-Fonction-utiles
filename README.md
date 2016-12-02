@@ -1,8 +1,7 @@
 # Code-ou-Fonction-utiles
 Répertoir des bout de code ou des fonctions qui peuvent être utiles au développement
 
-
-    # Fonction_code_bouton_password_cache_clair.js 
+# Fonction_code_bouton_password_cache_clair.js 
 
         * Cette partie de code permet de mettre à coté d'une balise INPUT 
         ayant une class "password", une balise BUTTON et de gérer son action.
@@ -17,7 +16,7 @@ Répertoir des bout de code ou des fonctions qui peuvent être utiles au dévelo
 
  
  
-    # Fonction maintenant_imaha()
+# Fonction maintenant_imaha()
 
         * Fonction javaScript qui permet de retourner la date et l'heure
         sous forme de tableau objet. Elle retourne le tableau avec 
