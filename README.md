@@ -36,7 +36,7 @@ Répertoir des bout de code ou des fonctions qui peuvent être utiles au dévelo
                heure_format: donne l'heure sous format du pays soit ex: 00 h 00 m.
                heure_standar: donne l'heure sans format exemple : 00:00:00,
                jour_chiffre: donne le numero du jour,
-               jour_nom: donne le nom ud jour dans la langue demandée,
+               jour_nom: donne le nom du jour dans la langue demandée,
                mois_chiffre: donne le numero du mois,
                mois_nom: donne le nom du mois dans la langue du pays demnandé.
        
