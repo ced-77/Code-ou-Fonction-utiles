@@ -148,8 +148,8 @@
                 
             // creation de l'objet qui sera renvoye
                  tableau_date_heure = { 
-                            heure : heure,
-                            minutes : minutes,
+                            heure : parseInt(heure),
+                            minutes : parseInt(minutes),
                             heure_standar : heure_standar,
                             annee : annee,
                             mois_chiffre : mois_chiffre,
@@ -165,6 +165,15 @@
 
              // fin de la fonction maintenant_imawa()
              }
-             
+ 
+
+    var resultat_default = maintenant_imawa();
+    var resultat_us = maintenant_imawa('us');
+    var resultat_jp = maintenant_imawa('jp');
+
+    console.log(resultat_default);
+    console.log(resultat_us);
+    console.log(resultat_jp);
+
              
            
