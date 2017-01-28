@@ -148,6 +148,8 @@
                 
             // creation de l'objet qui sera renvoye
                  tableau_date_heure = { 
+                            heure : heure,
+                            minutes : minutes,
                             heure_standar : heure_standar,
                             annee : annee,
                             mois_chiffre : mois_chiffre,
@@ -165,9 +167,4 @@
              }
              
              
-             // execution de la fonction
-             var date_heure_du_jour = maintenant_imawa(); 
-              console.log(date_heure_du_jour);  
-
-             var laDateDuJour = date_heure_du_jour['date_format'];
-             console.log('Aujourd\'hui nous somme '+laDateDuJour);  
+           
