@@ -17,7 +17,7 @@ Répertoir des bout de code ou des fonctions qui peuvent être utiles au dévelo
 
  
  
-## Fonction maintenant_imaha()
+## Fonction maintenant_imawa()
 
       * Fonction javaScript qui permet de retourner la date et l'heure
         sous forme de tableau objet. Elle retourne le tableau avec 
@@ -29,4 +29,14 @@ Répertoir des bout de code ou des fonctions qui peuvent être utiles au dévelo
         @param string, var pays (code http du pay )
 
         @return array, tableau objet
+        
+          l'objet retourné donne :
+               annee : annee,
+               date_format: la date complete formatée au format du pays demandé (sans l'heure)
+               heure_format: donne l'heure sous format du pays soit ex: 00 h 00 m.
+               heure_standar: donne l'heure sans format exemple : 00:00:00,
+               jour_chiffre: donne le numero du jour,
+               jour_nom: donne le nom du jour dans la langue demandée,
+               mois_chiffre: donne le numero du mois,
+               mois_nom: donne le nom du mois dans la langue du pays demnandé.
        
