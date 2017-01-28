@@ -31,6 +31,8 @@ Répertoir des bout de code ou des fonctions qui peuvent être utiles au dévelo
         @return array, tableau objet
         
           l'objet retourné donne :
+               heure : jsute l'heure actuel,
+               minutes : juste les minutes actuelles,
                annee : annee,
                date_format: la date complete formatée au format du pays demandé (sans l'heure)
                heure_format: donne l'heure sous format du pays soit ex: 00 h 00 m.
