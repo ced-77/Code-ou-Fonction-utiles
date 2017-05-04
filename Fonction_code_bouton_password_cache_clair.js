@@ -23,17 +23,17 @@
     	// annulation du comportement par defautl
     	event.preventDefault(); 
     
-    	var attribumotDePasse = $('input.password').attr('type');
+    	var attribumotDePasse = $('input.password',this).attr('type');
      console.log(attribumotDePasse);
     
     		// controle de l'attribue
     			if (attribumotDePasse == 'password'){
-    				$('input.password').attr('type',"text");
-    				$('button.password').text('Caché');	
+    				$('input.password',this).attr('type',"text");
+    				$('button.password',this).text('Caché');	
     
     			} else { 
-    				$('input.password').attr('type',"password");
-    				$('button.password').text('En clair');
+    				$('input.password',this).attr('type',"password");
+    				$('button.password',this).text('En clair');
            // fin de la condition 
     			}
     // fin de la fonction click sur l'input password	
