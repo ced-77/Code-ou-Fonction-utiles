@@ -13,7 +13,7 @@
  *                
  */
  
-  // creation du bouton pour cachà ou mettre en claire la saisie de l'input password
+  // creation du bouton pour cacher ou mettre en claire la saisie de l'input password
   
      $('input.password').after('<button class="password">En clair</button>'); 
         
@@ -23,17 +23,17 @@
     	// annulation du comportement par defautl
     	event.preventDefault(); 
     
-    	var attribumotDePasse = $('input.password',this).attr('type');
+    	var attribumotDePasse = $('input.password' ).attr('type');
      console.log(attribumotDePasse);
     
     		// controle de l'attribue
     			if (attribumotDePasse == 'password'){
-    				$('input.password',this).attr('type',"text");
-    				$('button.password',this).text('Caché');	
+    				$('input.password').attr('type',"text");
+    				$('button.password' ).text('Caché');	
     
     			} else { 
-    				$('input.password',this).attr('type',"password");
-    				$('button.password',this).text('En clair');
+    				$('input.password' ).attr('type',"password");
+    				$('button.password' ).text('En clair');
            // fin de la condition 
     			}
     // fin de la fonction click sur l'input password	
